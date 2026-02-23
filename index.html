@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gana en automático con IA y Redes Sociales</title>
+    <!-- Font Awesome para iconos (opcional, para dar estilo) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+        }
+        body {
+            background: #f5f7fa;
+            color: #1e2a41;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            background: white;
+            border-radius: 24px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            color: #0a1a2f;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #0a1a2f;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #2d3a5e;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            background: linear-gradient(145deg, #f9f3e7, #fff);
+            border-left: 6px solid #ff8a5c;
+            padding: 15px 20px;
+            border-radius: 16px;
+            font-weight: 500;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin: 25px 0;
+            background: #d9e2ec;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        /* Placeholder visual para el video (si no hay iframe) */
+        .video-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1e2a41;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            border-radius: 20px;
+        }
+        .video-placeholder i {
+            font-size: 4rem;
+            margin-right: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background: #0a1a2f;
+            color: white;
+            padding: 16px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+            box-shadow: 0 8px 15px rgba(10,26,47,0.2);
+            border: none;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        .btn:hover {
+            background: #142b44;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(10,26,47,0.3);
+        }
+        .btn-secondary {
+            background: #ff8a5c;
+            color: #0a1a2f;
+            box-shadow: 0 8px 15px rgba(255,138,92,0.3);
+        }
+        .btn-secondary:hover {
+            background: #ff7642;
+        }
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+            box-shadow: 0 8px 15px rgba(37,211,102,0.3);
+        }
+        .btn-whatsapp:hover {
+            background: #20bd5a;
+        }
+        .btn-whatsapp i {
+            margin-right: 8px;
+        }
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0 10px;
+        }
+        .bonus-box {
+            background: linear-gradient(145deg, #f0f5fe, #ffffff);
+            border: 2px dashed #ff8a5c;
+            padding: 25px;
+            border-radius: 32px;
+            text-align: center;
+        }
+        .bonus-box p {
+            font-size: 1.2rem;
+        }
+        .bonus-highlight {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #ff5c2c;
+            display: block;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #e0e7f0;
+            margin: 30px 0;
+        }
+        .footer-note {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #7f8fa6;
+            margin-top: 20px;
+        }
+        /* responsive */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.5rem; }
+            .btn { display: block; width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- SECCIÓN PRINCIPAL: TEXTO DE OPORTUNIDAD -->
+        <section>
+            <h1>🚀 Gana en automático con un sistema probado</h1>
+            <p class="highlight">
+                Además, cuando te conviertes en un miembro Pro, te damos acceso a <strong>clases en vivo</strong> para ti y tu equipo sobre cómo usar la IA, las redes sociales y automatizar tus ingresos con una herramienta en lanzamiento que se está volviendo viral. 
+                <br><br>
+                Mira cómo funciona y aprovecha la oferta hoy mismo.
+            </p>
+        </section>
+
+        <!-- VIDEO DE PRESENTACIÓN (usa el mismo link como placeholder; cámbialo si tienes otro) -->
+        <section>
+            <h2>🎥 Video de presentación</h2>
+            <div class="video-container">
+                <!-- Si tienes un video diferente, reemplaza el src del iframe -->
+                <iframe src="https://www.youtube.com/embed/KeXiwOWlai8" 
+                        title="Video de presentación" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+                <!-- Si no deseas usar el mismo video, puedes usar un placeholder visual:
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i> Video de presentación
+                </div> -->
+            </div>
+            <p style="text-align: center; color: #5e6f8d;">Descubre cómo funciona el sistema paso a paso.</p>
+        </section>
+
+        <!-- BOTÓN COMENZAR AHORA -->
+        <section style="text-align: center;">
+            <a href="https://aiviraldownline.com/lc.php?id=Viralconde" class="btn" target="_blank" rel="noopener">🔥 COMENZAR AHORA</a>
+            <p style="margin-top: 15px; font-size: 0.95rem;">Haz clic para acceder a la oferta por tiempo limitado.</p>
+        </section>
+
+        <!-- TUTORIAL PASO A PASO (enlace externo) -->
+        <section>
+            <h2>📘 ¿Cómo empezar? Tutorial paso a paso</h2>
+            <p>Sigue este video tutorial para configurar todo correctamente y dar tus primeros pasos:</p>
+            <div style="text-align: center;">
+                <a href="https://youtu.be/KeXiwOWlai8?si=Xk8Dm9CcCsXmjS5J" class="btn btn-secondary" target="_blank" rel="noopener">
+                    <i class="fab fa-youtube"></i> Ver tutorial en YouTube
+                </a>
+            </div>
+        </section>
+
+        <!-- BOTÓN WHATSAPP GENERAL (contacto) -->
+        <section>
+            <h2>💬 ¿Preguntas? Escríbenos directo</h2>
+            <p>Si tienes dudas sobre el sistema o la membresía, nuestro equipo está listo para ayudarte.</p>
+            <div style="text-align: center;">
+                <a href="https://wa.me/525610464805?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20oportunidad%20de%20ingresos%20con%20IA." 
+                   class="btn btn-whatsapp" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE BONOS (MÁS DE $1000 EN CLASES) -->
+        <section class="bonus-box">
+            <h2>🎁 Bonos exclusivos por tiempo limitado</h2>
+            <p>
+                <span class="bonus-highlight">+$1000 USD</span> en <strong>clases en vivo</strong> cuando te conviertes en miembro Pro.
+            </p>
+            <p style="font-size: 1.2rem;">
+                Solo tienes que enviarnos tu <strong>nombre y comprobante de pago</strong> por WhatsApp para darte acceso inmediato a las clases en vivo como bono adicional.
+            </p>
+            <div style="text-align: center; margin-top: 25px;">
+                <a href="https://wa.me/525610464805?text=Hola%2C%20mi%20nombre%20es%20%5BEscribe%20tu%20nombre%20aqu%C3%AD%5D%20y%20adjunto%20mi%20comprobante%20de%20pago%20para%20recibir%20los%20bonos%20de%20clases%20en%20vivo." 
+                   class="btn btn-whatsapp" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i> Enviar mi recibo por WhatsApp
+                </a>
+                <p style="margin-top: 12px; font-size: 0.9rem;">*Recuerda incluir tu nombre y el comprobante en el mensaje.</p>
+            </div>
+        </section>
+
+        <!-- Línea divisoria y nota final -->
+        <hr>
+        <div class="footer-note">
+            <p>© 2025 - Oportunidad de ingresos con IA y redes sociales. Todos los derechos reservados.</p>
+            <p>WhatsApp: +52 56 1046 4805</p>
+        </div>
+    </div>
+</body>
+</html>
